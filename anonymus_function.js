@@ -3,6 +3,8 @@ const fn = function(messageForUser){
 
     return userInput
 }
-
 const inputFromUser = fn("ile masz lat?")
 console.log(inputFromUser)
+
+////////////////////////////
+
