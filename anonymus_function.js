@@ -17,7 +17,7 @@ const sumNumbersFromUser = function(userInputFn) {
     const b = userInputFn("Podaj liczbę b")
 
     const sum = parseFloat(a) + parseFloat(b)
-
+    
     return sum;
 }
 
