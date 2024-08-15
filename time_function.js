@@ -7,7 +7,7 @@ function showName(name) {
 }
 
 setTimeout(showMessage,1000)
-setTimeout(showName,2000)
+setTimeout(showName('Patryk'),2000)
 setTimeout(function(){
     console.log("this is the anonymus function which will be displayed as last")
 }, 5000)
