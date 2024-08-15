@@ -1,3 +1,4 @@
+/* setTimout functions */
 function showMessage() {
     console.log("To jest pierwsza wiadomość")
 }
@@ -12,3 +13,13 @@ setTimeout(function(){
     console.log("this is the anonymus function which will be displayed as last")
 }, 5000)
 
+/* setINterval functions */
+
+let counter = 0
+function showMessage(message) {
+    setInterval(function() {
+        counter++
+        console.log(message + " " + counter)
+    }, 3000)
+}
+showMessage("Ta wiadomość pokazuje ci się po raz")
