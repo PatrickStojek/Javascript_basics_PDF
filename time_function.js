@@ -24,7 +24,7 @@ function showMessage(message) {
 }
 showMessage("Ta wiadomość pokazuje ci się po raz") */
 
-let counter = 1;
+/* let counter = 1;
 
 const showCounter = function() {
     console.log(counter)
@@ -33,4 +33,18 @@ const showCounter = function() {
 
 console.log("Before setInterval") // 1
 setInterval(showCounter, 2000) // 3
-console.log("After setInterval") // 2
+console.log("After setInterval") // 2 */
+
+/* here we will clear the interval after a certain counter value will be reached */
+let interval
+let counter = 1
+const showCounter = function() {
+    console.log(counter)
+    counter++
+
+    if(counter > 5) {
+        clearInterval(interval)
+    }
+}
+
+interval = setInterval(showCounter, 1000)
