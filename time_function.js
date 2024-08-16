@@ -39,12 +39,14 @@ console.log("After setInterval") // 2 */
 let interval
 let counter = 1
 const showCounter = function() {
-    console.log(counter)
+    console.log(counter + " effect of the show counter function")
     counter++
 
     if(counter > 5) {
+        console.log("this is the end of the interval")
         clearInterval(interval)
     }
 }
 
 interval = setInterval(showCounter, 1000)
+
