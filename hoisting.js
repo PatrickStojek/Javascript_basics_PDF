@@ -6,5 +6,5 @@ function getNum() {
 }
 
 console.log(firstName) //undefined
-var FirstName = "Anna"
+var firstName = "Anna"
  
