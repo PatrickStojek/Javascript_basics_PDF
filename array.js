@@ -22,10 +22,28 @@ function drawRandomNumber() {
     const numbers = []
     while(numbers.length < 5) {
         const num = Math.round(Math.random() * 10)
-        if (numbers.includes(num)) {
-        } else numbers.push(num)
+        if (!numbers.includes(num)) {
+            numbers.push(num)
+        }
     }
     return numbers
 }
-
 console.log(drawRandomNumber())
+
+//sorting algorithm
+const numbers = [12.1, 1, 2.5, 42.3, 11, 15, 7]
+//in ascending order
+numbers.sort((a,b) => a + b)
+//in descending order
+numbers.sort((a,b) => a - b)
+
+//sum of the numbers from numbers array
+function sumOfArrayNumbers() {
+    const sum = 0 
+    for(let i = 0; i < numbers.length; i++){
+        sum += numbers[i]
+    }
+    return sum
+}
+
+console.log(sumOfArrayNumbers())
