@@ -22,7 +22,7 @@ function getSum(a, b, c){
 }
 
 function getAvarage(sum, count) {
-    if(counter == 0) {
+    if(count == 0) {
         return 0
     }
     return sum / count;
@@ -30,7 +30,7 @@ function getAvarage(sum, count) {
 
 //// example of common mistake 
 
-showinfo()
+showinfo() // undefined beacuase we didn't moved the function without declaring it to the variable. correct line: const info = showInfo()
 
 varshowInfo = function() {
     console.log('Hoisting!')
