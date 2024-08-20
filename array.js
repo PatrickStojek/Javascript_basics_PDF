@@ -31,19 +31,31 @@ function drawRandomNumber() {
 console.log(drawRandomNumber())
 
 //sorting algorithm
-const numbers = [12.1, 1, 2.5, 42.3, 11, 15, 7]
+const numbers = [12.1, 2, 2.5, 42.3, 11, 15, 7]
 //in ascending order
 numbers.sort((a,b) => a + b)
 //in descending order
 numbers.sort((a,b) => a - b)
 
 //sum of the numbers from numbers array
-function sumOfArrayNumbers() {
+function getEvenNumbersArray(array) {
+    const evenNumbersArray = []
+    for(let i = 0; i < array.length; i++) {
+        if(array[i] % 2 === 0) {
+            evenNumbersArray.push(array[i])
+        }
+    }
+    return evenNumbersArray
+}
+
+console.log(getEvenNumbersArray(numbers))
+
+function sumOfArrayNumbers(array) {
     let sum = 0 
     for(let i = 0; i < numbers.length; i++){
-        sum += numbers[i]
+        sum += array[i]
     }
     return sum
 }
 
-console.log(sumOfArrayNumbers())
+console.log(sumOfArrayNumbers(numbers))
