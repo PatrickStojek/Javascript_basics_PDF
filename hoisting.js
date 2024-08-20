@@ -23,7 +23,7 @@ function getSum(a, b, c){
 
 function getAvarage(sum, count) {
     if(counter == 0) {
-        return sum
+        return 0
     }
     return sum / count;
 }
