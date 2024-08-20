@@ -27,3 +27,11 @@ function getAvarage(sum, count) {
     }
     return sum / count;
 }
+
+//// example of common mistake 
+
+showinfo()
+
+varshowInfo = function() {
+    console.log('Hoisting!')
+}
