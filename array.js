@@ -15,3 +15,17 @@ if(names.includes("Kasia")) {
 } else {
     console.log("Brak w tablicy")
 }
+
+///writing simple algorithm using array methods:
+
+function drawRandomNumber() {
+    const numbers = []
+    while(numbers.length < 5) {
+        const num = Math.round(Math.random() * 10)
+        if (numbers.includes(num)) {
+        } else numbers.push(num)
+    }
+    return numbers
+}
+
+console.log(drawRandomNumber())
