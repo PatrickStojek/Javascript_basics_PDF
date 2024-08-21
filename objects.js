@@ -49,3 +49,13 @@ const error =  {
 notice.showText(); //Notice!
 error.showText(); //Error!
 
+/////////////////////////////////////////////////////////////////
+const user = {
+    firstName : 'Alicja',
+    lastName : 'Nowak',
+    age: 24,
+}
+
+for(const key in user) {
+    console.log(user[key]) // Alicja, Nowak, 24
+}
