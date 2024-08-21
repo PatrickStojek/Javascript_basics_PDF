@@ -30,6 +30,12 @@ function showInfo() {
     console.log(this.text)
 }
 
+//common mistake made with this operator:
+function changeContext() {
+    console.log(this.text)
+}
+changeContext() //undefined
+
 const notice = {
     text: 'Notice!',
     showText: showInfo,
