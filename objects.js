@@ -77,3 +77,13 @@ function getTotalPrice(priceObject) {
     }
     return totalPrice
 }
+
+//Another version of the same function
+function getTotalPriceAlternative(priceObject) {
+    let totalPrice = 0;
+    const values = Object.values(priceObject)
+     totalPrice = values.reduce((a,b) => a + b )
+    return totalPrice
+}
+
+console.log(getTotalPriceAlternative(travelPrice))
