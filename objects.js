@@ -59,3 +59,21 @@ const user = {
 for(const key in user) {
     console.log(user[key]) // Alicja, Nowak, 24
 }
+////////////////////////////////////////////////////////////////////
+const travelPrice = {
+    flight: 591,
+    hotel: 400,
+    excursions: 421,
+    other: 120,
+}
+
+const totalPrice = getTotalPrice(travelPrice);
+console.log(totalPrice)
+
+function getTotalPrice(priceObject) {
+    let totalPrice = 0;
+    for(const costName in priceObject){
+        totalPrice += priceObject[costName]
+    }
+    return totalPrice
+}
