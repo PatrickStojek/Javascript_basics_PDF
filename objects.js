@@ -17,7 +17,7 @@ console.log(hp) // 540
 
 
 car.getSeatsNumber = function() {
-    return car.seatsNumber
+    return this.seatsNumber
 }
 
 console.log(
