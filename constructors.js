@@ -25,3 +25,18 @@ student1.showFullName // Marek , Nowak
 student1.firstName = 'Darek';
 student1.lastName = 'Jarek'
 student1.showFullName() //Darek Jarek
+
+/////short program for creating array of students
+const studentsNum = parseInt(prompt('Liczba uczniów?'));
+const studentList = []
+for(let i = 0; i < studentsNum; i++) {
+    const firstName = prompt('Podaj imię: ')
+    const lastName = prompt("Podaj nazwisko: ")
+    const newStudent = new Student(firstName, lastName)
+    studentList.push(newStudent)
+}
+
+studentList.forEach(function(item) {
+    item.showFullName( )
+})
+
