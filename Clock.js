@@ -16,4 +16,4 @@ function getTime(date) {
 
 function startWithZero(num) {
     return (num < 10 ? '0' : '' ) + num
-}
+}x
