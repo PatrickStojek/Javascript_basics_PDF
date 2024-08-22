@@ -19,5 +19,9 @@ console.log(
     student1.class, // 2B
     student2.class // 2B
 )
-
 student1.showFullName // Marek , Nowak
+
+/////Modifyng values of student1
+student1.firstName = 'Darek';
+student1.lastName = 'Jarek'
+student1.showFullName() //Darek Jarek
