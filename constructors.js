@@ -2,9 +2,13 @@ function Student(initFirstName, initLastName) {
     this.firstName = initFirstName;
     this.LastName = initLastName;
     this.class = '2B';
-    this.showFullName = function() {
+    /* this.showFullName = function() {
         console.log(this.firstName, this.LastName)
-    }
+    } */
+}
+
+Student.prototype.showFullName = function() {
+    console.log(this.firstName, this.lastName)
 }
 
 const student1 = new Student('Marek', 'Nowak')
